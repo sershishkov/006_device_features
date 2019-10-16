@@ -21,7 +21,7 @@ export const addPlace = (title, image) => {
         18.15,
         36.42
       );
-      console.log(dbResult);
+      // console.log(dbResult);
       dispatch({
         type: ADD_PLACE,
         placeData: {
