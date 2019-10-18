@@ -65,7 +65,7 @@ export const loadPlaces = () => {
     try {
       const dbResult = await fetchPlaces();
 
-      console.log(dbResult);
+      // console.log(dbResult);
 
       dispatch({
         type: SET_PLACES,
