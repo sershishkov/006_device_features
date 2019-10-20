@@ -17,13 +17,15 @@ export const addPlace = (title, image, location) => {
 
     const resData = await response.json();
     // console.log('addressss', resData);
-    if (!resData.result) {
+    if (!resData.results) {
       throw new Error('Something went wrong(address2)');
     }
 
     const address = resData.results[0].formatted_address;
 
     const fileName = image.split('/').pop();
+    // console.log('image', image);
+    // console.log('fileName', fileName);
 
     const newPath = FileSystem.documentDirectory + fileName;
 
